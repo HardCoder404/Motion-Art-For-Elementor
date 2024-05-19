@@ -1,0 +1,555 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: hidden;
+  }
+
+.mainContent{
+  height:100vh;
+  overflow-y: scroll;
+}
+
+.gradient-text {
+    background: linear-gradient(87deg, #ED7620 16%, #6526E7 39%, #5D0EFF 40%, #5F12FF 100%, #5F12FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.gradient-Text{
+    background: linear-gradient(87deg, #ED7620 5%, #6526E7 18%, #5D0EFF 40%, #5F12FF 100%, #5F12FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.line{
+    line-height: 85px;
+}
+.purchasebtn{
+    background: rgb(94,17,255);
+background: linear-gradient(108deg, rgba(94,17,255,1) 0%, rgba(248,117,22,1) 72%);
+}
+.line-2{
+    line-height: 55px;
+}
+.card{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF10;
+    margin: 70px 60px 120px 140px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 30px 30px 30px 30px;
+    max-width: 590px;
+    height: 535px;
+}
+.card2{
+    position: relative;
+    top: 60px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF10;
+    margin: 70px 60px 120px -40px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 30px 30px 30px 30px;
+    max-width: 590px;
+}
+.card3{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF10;
+    margin-left: 9%;
+    margin-right: 12%;
+    margin-bottom: 20px;
+    margin-top: 7%;
+    --e-column-margin-right: 20px;
+    --e-column-margin-left: 20px;
+    padding: 50px 30px 50px 30px;
+}
+.card4{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF10;
+    margin: 10px 10px 10px 10px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 10px 10px 30px 10px;
+    width: 385px;
+}
+.footer{
+    background: rgb(248,117,22);
+background: linear-gradient(108deg, rgba(248,117,22,1) 0%, rgba(94,17,255,1) 72%);
+}
+
+
+
+@media (min-width:20px) and (max-width:426px) {
+
+    .purchaseBtn{
+      display: none;
+    }
+    .logo{
+        margin-left: -130px;
+    }
+    .navLogo{
+        height: 14px;
+        margin-left: -5px;
+    }
+    .buyNowBtn{
+        margin-right: -10px;
+    }
+    .gradient-Text{
+        margin-left: -50px;
+        background: linear-gradient(87deg, #ED7620 30%, #6526E7 40%, #5D0EFF 100%, #5F12FF 100%, #5F12FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        width: 200px;
+    }
+    .gradient-Text1{
+        width: 200px;
+        margin-left: -30px;
+    }
+    br{
+        display: none;
+    }
+    .gradient-Text2{
+        width: 310px;
+        margin-left: -145px;
+        font-size: 39px;
+        line-height: normal;
+        text-align: center;
+        margin-top: 210px;
+    }
+    .gradient-Text3{
+        width: 350px;
+        margin-left: -170px;
+        font-size: 16.3px;
+        text-align: center;
+        font-weight: 400;
+        color: #bebdbd;
+        margin-top: 30px;
+    }
+    .gradient-Text4{
+        text-align: center;
+        width: 300px;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 260px;
+        margin-left: 50px;
+        margin-top: 65px;
+    }
+    .gradientFlex{
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin-left: 30px;
+        gap: 15px;
+    }
+    .gradient-Text5{
+        width: 345px;
+        font-size: 26px;
+        text-align: center;
+        line-height: 45px;
+        margin-left: -15px;
+    }
+    .gradient-Text6{
+        width: 350px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: -20px;
+        margin-bottom: -5px;
+    }
+    .purchaseButton{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .gradientFlex img{
+        position: relative;
+        left: 40px;
+    }
+    .gradient-Text7{
+        text-align: center;
+        width: 350px;
+        font-size: 27px;
+        margin-left: 10px;
+    }
+    .sectionCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionCard .card1{
+        width: 94%;
+        margin-left: 10px;
+        margin-bottom: 0;
+        margin-right: 10px;
+        height: 430px;
+    }
+    .sectionCard .card2{
+        margin-top: -40px;
+        width: 94%;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 430px;
+    }
+    .supportedBrowser{
+        width: 90%;
+        margin-left: 18px;
+        margin-top: -20px;
+    }
+    .supportedBrowser h5{
+        width: 300px;
+        font-size: 22px;
+        text-align: center;
+        margin-left: -12px;
+    }
+    .supportedBrowser p{
+        width: 250px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .supportedBrowser img{
+        padding: 10px;
+    }
+    .gradient-Text8{
+        width: 100%;
+        font-size: 28px;
+        line-height: 45px;
+        margin-top: 80px;
+    }
+    .gradient-Text9{
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+        padding: 10px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: -100px;
+    }
+    .featureCard{
+        width: 105%;
+        padding-bottom: 35px;
+    }
+    .footer{
+        height: 97px;
+        margin-top: 100px;
+    }
+    .copyright{
+        position: relative;
+        top: 57px;
+        right: 13px;
+    }
+    .footer ul{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        top: 0px;
+        left: 10px;
+    }
+}
+
+@media (min-width:426px) and (max-width:769px) {
+   .purchaseBtn{
+    display: none;
+   }
+   .logo{
+    margin-left: -130px;
+   }
+   br{
+    display: none;
+   }
+   .text1{
+    margin-left: -56px;
+    width: 241px;
+   }
+   .gradient-Text2{
+    width: 350px;
+    font-size: 44px;
+    line-height: 56px;
+   }
+   .gradient-Text3{
+    width: 390px;
+    font-weight: 400;
+   }
+   .review1{
+    width: 250px;
+    margin-left: -50px;
+   }
+   .review{
+    gap: 356px;
+    width: 64%;
+   }
+   .review3{
+    margin-left: -591px;
+    position: relative;
+    top: 142px;
+   }
+   .gradient-Text5{
+    margin-top: 159px;
+    margin-left: -132px;
+    width: 390px;
+    line-height: 50px;
+    font-size: 32px;
+   }
+   .gradient-Text6{
+    margin-left: -132px;
+    width: 430px;
+   }
+   .purchaseButton{
+    margin-left: -134px;
+    margin-top: 30px;
+   }
+   .gradientFlex img{
+    width: 100%;
+    height: 100%;
+    margin-top: 209px;
+    margin-left: 64px;
+   }
+   .gradient-Text7{
+    width: 480px;
+    margin-left: 130px;
+    font-size: 33px;
+   }
+   .card1{
+    width: 106%;
+    height: 100%;
+    margin-left: 20px;
+    font-size: 17px;
+   }
+   .card2{
+    width: 100%;
+    margin-right: 20px;
+    font-size: 17px;
+   }
+   .supportedBrowser {
+    width: 95%;
+    margin-left: 20px;
+   }
+   .supportedBrowser p{
+    width: 468px;
+    margin-left: 98px;
+   }
+   .supportedBrowser h5{
+    font-size: 28px;
+   }
+   .gradient-Text8{
+    font-size: 34px;
+    width: 400px;
+    margin-left: 185px;
+    margin-top: 110px;
+   }
+   .gradient-Text9{
+    width: 400px;
+    margin-left: 178px;
+   }
+   .features{
+    margin-left: 10px;
+    margin-bottom: 460px;
+
+   }
+   .featureCard1{
+    width: 154%;
+    font-size: 18px;
+   }
+   .featureCard2{
+    margin-left: 155px;
+    width: 156%;
+    font-size: 19px;
+   }
+   .featureCard3{
+    position: relative;
+    top: 395px;
+    width: 730px;
+    margin-left: -445px;
+    height: 330px;
+   }
+   .footer{
+    height: 97px;
+    margin-top: 100px;
+   }
+   .copyright{
+    position: relative;
+    left: 115px;
+    top: 25px;
+    font-weight: 500;
+   }
+   .footer ul{
+    position: relative;
+    right: 210px;
+    top: -20px;
+   }
+}
+
+@media (min-width:769px) and (max-width:1025px) {
+    .purchaseBtn{
+     display: none;
+    }
+    .logo{
+     margin-left: -130px;
+    }
+    br{
+     display: none;
+    }
+    .text1{
+     margin-left: -56px;
+     width: 241px;
+    }
+    .gradient-Text2{
+     width: 500px;
+     font-size: 44px;
+     line-height: 56px;
+     margin-left: 70px;
+    }
+    .gradient-Text3{
+     width: 520px;
+     font-weight: 400;
+     margin-left: 70px;
+    }
+    .review1{
+     width: 250px;
+     margin-left: -50px;
+    }
+    .review{
+    gap: 455px;
+     width: 64%;
+     margin-left: 205px;
+    }
+    .review3{
+     margin-left: -747px;
+     position: relative;
+     top: 142px;
+    }
+    .gradient-Text5{
+     margin-top: 159px;
+     margin-left: -132px;
+     width: 550px;
+     line-height: 50px;
+     font-size: 32px;
+    }
+    .gradient-Text6{
+     margin-left: -132px;
+     width: 598px;
+    }
+    .purchaseButton{
+     margin-left: -134px;
+     margin-top: 30px;
+    }
+    .gradientFlex img{
+     width: 100%;
+     height: 100%;
+     margin-top: 209px;
+     margin-left: 140px;
+    }
+    .gradient-Text7{
+     width: 490px;
+     margin-left: 275px;
+     font-size: 33px;
+    }
+    .card1{
+     width: 106%;
+     height: 100%;
+     margin-left: 20px;
+     font-size: 17px;
+    }
+    .card2{
+     width: 100%;
+     margin-right: 20px;
+     font-size: 17px;
+    }
+    .supportedBrowser {
+        width: 95%;
+        margin-left: 20px;
+        margin-top: -18px;
+    }
+    .supportedBrowser p{
+     width: 468px;
+     margin-left: 220px;
+    }
+    .supportedBrowser h5{
+     font-size: 28px;
+    }
+    .gradient-Text8{
+     font-size: 34px;
+     width: 668px;
+     margin-left: 185px;
+     margin-top: 110px;
+    }
+    .gradient-Text9{
+        width: 553px;
+        margin-left: 243px;
+    }
+    .features{
+     margin-left: 10px;
+     margin-bottom: 460px;
+ 
+    }
+    .featureCard1{
+     width: 154%;
+     font-size: 18px;
+    }
+    .featureCard2{
+     margin-left: 204px;
+     width: 156%;
+     font-size: 19px;
+    }
+    .featureCard3{
+        position: relative;
+        top: 395px;
+        width: 968px;
+        margin-left: -595px;
+        height: 330px;
+    }
+    .footer{
+     height: 97px;
+     margin-top: 100px;
+    }
+    .copyright{
+     position: relative;
+     left: 230px;
+     top: 25px;
+     font-weight: 500;
+    }
+    .footer ul{
+     position: relative;
+     right: 310px;
+     top: -20px;
+    }
+ }
+
+ @media (min-width:1025px) and (max-width:1441px) {
+    .features{
+        gap: 75px;
+    }
+    .supportedBrowser{
+        width: 85%;
+    }
+    .gradient-Text7{
+        margin-left: 175px;
+    }
+    .gradient-Text8{
+        margin-left: 175px;
+    }
+    .gradient-Text9{
+        margin-left: 100px;
+    }
+ }
